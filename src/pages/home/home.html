@@ -1,14 +1,65 @@
 <ion-header>
-  <ion-navbar>
+  <ion-navbar color="codetribe">
     <ion-title>
       Ionic Blank
     </ion-title>
   </ion-navbar>
 </ion-header>
-
 <ion-content padding>
-  The world is your oyster.
-  <p>
-    If you get lost, the <a href="http://ionicframework.com/docs/v2">docs</a> will be your guide.
-  </p>
+  <ion-grid>
+  <ion-row>
+<ion-col col-6>
+<h1 text-center>Codetribe Soweto </h1>
+<h2 text-center>{{Sowetoscore}} </h2>
+<p text-center>score</p>
+<ion-list no-lines no padding >
+
+    <ion-item text-center>
+    <ion-col col-3><button ion-button round  color="codetribe" (click)="Soweto(-3)" >-3</button></ion-col>
+    <ion-col col-5><button ion-button round  color="codetribe"   (click)="Soweto(+3)" >+3</button></ion-col>
+    </ion-item>
+
+     <ion-item text-center>
+     <ion-col col-3><button ion-button round  color="codetribe"(click)="Soweto(-2)">-2</button></ion-col>
+     <ion-col col-5><button ion-button round  color="codetribe"  (click)="Soweto(+2)">+2</button></ion-col>
+     </ion-item>
+
+    <ion-item text-center>
+    <ion-col col-3><button ion-button round  color="codetribe"(click)="Soweto(-1)">-1</button></ion-col>
+    <ion-col col-5><button ion-button round  color="codetribe" (click)="Soweto(+1)">+1</button></ion-col>
+    </ion-item>
+
+</ion-list>
+</ion-col>
+
+<ion-col col-6>
+<h1 text-center>Codetribe Tembisa </h1>
+<h2 text-center>{{Tembisascore}} </h2>
+<p text-center>score</p>
+<ion-list no-lines no padding>
+
+           <ion-item text-center>
+           <ion-col col-3> <button ion-button round  color="codetribe" (click)="Tembisa(-3)">-3</button></ion-col>
+           <ion-col col-5> <button ion-button round  color="codetribe" (click)="Tembisa(+3)">+3</button></ion-col>
+           </ion-item>
+
+            <ion-item text-center>
+            <ion-col col-3><button ion-button  round  color="codetribe" (click)="Tembisa(-2)">-2</button></ion-col>
+            <ion-col col-5><button ion-button  round  color="codetribe" (click)="Tembisa(+2)" >+2</button></ion-col>
+            </ion-item>
+
+           <ion-item text-center>
+            <ion-col col-3><button ion-button round  color="codetribe" (click)="Tembisa(-1)" >-1</button></ion-col>
+            <ion-col col-5><button ion-button round  color="codetribe"(click)="Tembisa(+1)" >+1</button></ion-col>
+           </ion-item>
+
+        </ion-list>
+        </ion-col>
+
+    </ion-row>
+  </ion-grid>
+
+<button ion-button block outline  color="codetribe" (click)="reset()">RESET</button>
+<button ion-button block outline  color="codetribe" (click)="end()">END</button>
+
 </ion-content>
